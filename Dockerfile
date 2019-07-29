@@ -10,6 +10,8 @@ USER root
 # Working directory is set to the home folder of `vagrant` user.
 WORKDIR /root/
 
+
+
 # Spark related variables.
 ARG SPARK_VERSION=2.3.0
 ARG SPARK_BINARY_ARCHIVE_NAME=spark-${SPARK_VERSION}-bin-hadoop2.7
@@ -33,6 +35,8 @@ RUN wget -qO - ${SPARK_BINARY_DOWNLOAD_URL} | tar -xz -C /usr/local/ && \
 ADD bootstrap.sh /etc/bootstrap.sh
 RUN chown root:root /etc/bootstrap.sh && \
 chmod 700 /etc/bootstrap.sh
+
+VOLUME [ "./app:/root/app" ]
 
 EXPOSE 4040 8080 8081 7077
 
