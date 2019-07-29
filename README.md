@@ -16,3 +16,8 @@ docker exec -it spark spark-shell --master spark://spark:7077 --executor-memory 
 
 Connect to the container and launch the shell.
 
+## Stop the container
+
+```bash
+docker stop spark
+```
