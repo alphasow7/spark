@@ -3,7 +3,7 @@
 ## Start the container
 
 ```bash
-docker run -d --rm -p 8080:8080 -v $PWD/app:/root/app --name spark -h spark swal4u/spark:2.3
+docker run -d --rm -p 8080:8080 -v $PWD/app:/app --name spark -h spark swal4u/spark:2.3
 ```
 
 The command starts the container and mounts the app directory that you can use for your application. Note the --rm option to destroy the container once it is finished. The master service and the slave service are started automatically.
@@ -15,6 +15,14 @@ docker exec -it spark spark-shell --master spark://spark:7077 --executor-memory 
 ```
 
 Connect to the container and launch the shell.
+
+## Work with spark-submit
+
+This is an example with the project hello-spark (default project included in swal4u/sbt image)
+
+```bash
+spark-submit --master spark://spark:7077 --class ConnexionLocal /app/target/scala*/hello-spark_2.11-0.0.1.jar
+```
 
 ## Stop the container
 
