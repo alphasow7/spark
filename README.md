@@ -21,7 +21,7 @@ Connect to the container and launch the shell.
 This is an example with the project hello-spark (default project included in swal4u/sbt image)
 
 ```bash
-docker exec -it spark spark-submit --master spark://spark:7077 --executor-memory 2G --class fr.stephanewalter.hello.Connexion /app/target/scala*/hello-spark_2.11-0.0.1.jar
+docker exec -it spark spark-submit --master spark://spark:7077 --executor-memory 2G --class fr.stephanewalter.hello.Connexion /app/target/scala-2.11/hello-spark_2.11-0.0.1.jar
 ```
 
 ## Stop the container
