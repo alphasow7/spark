@@ -29,3 +29,14 @@ docker exec -it spark spark-submit --master spark://spark:7077 --executor-memory
 ```bash
 docker stop spark
 ```
+
+## Publish a new version in docker hub
+
+You have to push a new tag version on master branch.
+
+```bash
+git tag -a vX.Y.Z.T
+git push --tags
+```
+
+Docker Hub detects a new version and build the container automatically.
