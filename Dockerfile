@@ -32,13 +32,13 @@ RUN wget -qO - ${SPARK_BINARY_DOWNLOAD_URL} | tar -xz -C /usr/local/ && \
     sed -i -e s/INFO/ERROR/g spark/conf/log4j.properties
 
 # Loop to avoid to exit
-ADD bootstrap.sh /etc/bootstrap.sh
-RUN chown root:root /etc/bootstrap.sh && \
-chmod 700 /etc/bootstrap.sh
-
-VOLUME [ "./app:/root/app" ]
+ADD master.sh /etc/master.sh
+ADD slave.sh /etc/slave.sh
+RUN chown root:root /etc/master.sh && \ 
+chown root:root /etc/slave.sh && \
+chmod 700 /etc/master.sh && \
+chmod 700 /etc/slave.sh
 
 EXPOSE 4040 8080 8081 7077
 
-CMD ["/etc/bootstrap.sh", "-d"]
-
+CMD ["/etc/master.sh", "-d","2G","1"]

@@ -2,7 +2,7 @@
 
 # Démarrage des services spark
 /usr/local/spark/sbin/start-master.sh
-/usr/local/spark/sbin/start-slave.sh spark://$HOSTNAME:7077 -m 2G -c 2
+/usr/local/spark/sbin/start-slave.sh spark://$HOSTNAME:7077 -m $2 -c $3
 
 
 # Boucle sans fin
