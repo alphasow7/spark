@@ -12,3 +12,114 @@ INFO: Unsupported notification method: $/setTrace
 2025.02.07 22:17:04 INFO  [info] loading project definition from C:\Users\Alpha\Documents\GitHub\spark\project\project
 2025.02.07 22:17:07 INFO  [info] loading settings for project spark-build from metals.sbt...
 2025.02.07 22:17:07 INFO  [info] loading project definition from C:\Users\Alpha\Documents\GitHub\spark\project
+2025.02.07 22:17:12 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\metals.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.02.07 22:17:12 INFO  [success] Generated .bloop\spark-build.json
+2025.02.07 22:17:12 INFO  [success] Total time: 5 s, completed 7 févr. 2025, 22:17:13
+2025.02.07 22:17:16 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\project\metals.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+févr. 07, 2025 10:17:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+2025.02.07 22:17:16 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\project\metals.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.02.07 22:17:16 INFO  [info] loading settings for project spark from build.sbt...
+2025.02.07 22:17:16 INFO  [info] set current project to app (in build file:/C:/Users/Alpha/Documents/GitHub/spark/)
+2025.02.07 22:17:17 WARN  Could not find semantic tokens for: file:///C:/Users/Alpha/Documents/GitHub/spark/project/project/metals.sbt
+2025.02.07 22:17:30 INFO  [success] Generated .bloop\spark.json
+2025.02.07 22:17:30 INFO  [success] Generated .bloop\spark-test.json
+2025.02.07 22:17:30 INFO  [success] Total time: 13 s, completed 7 févr. 2025, 22:17:30
+2025.02.07 22:17:30 INFO  time: ran 'sbt bloopInstall' in 38s
+2025.02.07 22:17:30 INFO  Attempting to connect to the build server...
+2025.02.07 22:17:30 INFO  No running Bloop server found, starting one.
+2025.02.07 22:17:33 INFO  Starting compilation server
+2025.02.07 22:17:33 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.02.07 22:17:33 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.02.07 22:17:33 WARN  Could not find semantic tokens for: file:///C:/Users/Alpha/Documents/GitHub/spark/build.sbt
+2025.02.07 22:17:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Alpha\Documents\GitHub\spark\.metals\bsp.trace.json or C:\Users\Alpha\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.02.07 22:17:38 INFO  Attempting to connect to the build server...
+2025.02.07 22:17:38 INFO  Found a Bloop server running
+2025.02.07 22:17:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Alpha\Documents\GitHub\spark\project\.metals\bsp.trace.json or C:\Users\Alpha\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.02.07 22:17:39 INFO  time: Connected to build server in 9.47s
+2025.02.07 22:17:39 INFO  Connected to Build server: Bloop v2.0.8
+2025.02.07 22:17:39 INFO  time: Imported build in 0.26s
+2025.02.07 22:17:39 INFO  running doctor check
+2025.02.07 22:17:39 INFO  java targets: spark-test, spark-build, spark
+2025.02.07 22:17:43 ERROR Failed to resolve mtags for 2.11.8
+coursierapi.error.SimpleResolutionError$1: Error downloading org.scalameta:mtags_2.11.8:1.5.1
+  not found: C:\Users\Alpha\.ivy2\local\org.scalameta\mtags_2.11.8\1.5.1\ivys\ivy.xml
+  not found: https://repo1.maven.org/maven2/org/scalameta/mtags_2.11.8/1.5.1/mtags_2.11.8-1.5.1.pom
+  not found: C:\Users\Alpha\.ivy2\local\org.scalameta\mtags_2.11.8\1.5.1\ivys\ivy.xml
+  not found: https://oss.sonatype.org/content/repositories/public/org/scalameta/mtags_2.11.8/1.5.1/mtags_2.11.8-1.5.1.pom
+  not found: https://oss.sonatype.org/content/repositories/snapshots/org/scalameta/mtags_2.11.8/1.5.1/mtags_2.11.8-1.5.1.pom
+	at coursierapi.error.SimpleResolutionError.of(SimpleResolutionError.java:11)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.simpleResError(ApiHelper.scala:451)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.doFetch(ApiHelper.scala:495)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper.doFetch(ApiHelper.scala)
+	at coursierapi.Fetch.fetchResult(Fetch.java:239)
+	at coursierapi.Fetch.fetch(Fetch.java:234)
+	at scala.meta.internal.metals.Embedded$.downloadDependency(Embedded.scala:301)
+	at scala.meta.internal.metals.Embedded$.downloadMtags(Embedded.scala:340)
+	at scala.meta.internal.metals.MtagsResolver$Default.$anonfun$resolve$3(MtagsResolver.scala:163)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+févr. 07, 2025 10:17:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+févr. 07, 2025 10:17:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-908.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-922.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-928.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-936.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-941.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-947.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-953.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-958.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-963.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-968.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-974.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-978.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-983.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-988.md)
+févr. 07, 2025 10:17:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-57-994.md)
+févr. 07, 2025 10:17:58 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-58-000.md)
+févr. 07, 2025 10:17:58 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-58-007.md)
+févr. 07, 2025 10:17:58 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: Java indexer failed with and exception. (full report at: C:\Users\Alpha\Documents\GitHub\spark\.metals\.reports\metals-full\2025-02-07\r_failed-idex-java_22-17-58-011.md)
+2025.02.07 22:18:10 INFO  time: indexed workspace in 31s
+2025.02.07 22:18:11 WARN  no build target for: C:\Users\Alpha\Documents\GitHub\spark\project\metals.sbt
+2025.02.07 22:18:11 WARN  no build target for: C:\Users\Alpha\Documents\GitHub\spark\project\project\metals.sbt
+2025.02.07 22:18:12 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\metals.sbt. Using presentation compiler with project's scala-library version: 2.12.20
+févr. 07, 2025 10:18:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.02.07 22:18:17 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\project\metals.sbt. Using presentation compiler with project's scala-library version: 2.12.20
+2025.02.07 22:18:17 INFO  time: code lens generation in 5.8s
+2025.02.07 22:20:12 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\metals.sbt. Using presentation compiler with project's scala-library version: 2.12.20
+2025.02.07 22:20:12 INFO  no build target found for C:\Users\Alpha\Documents\GitHub\spark\project\project\metals.sbt. Using presentation compiler with project's scala-library version: 2.12.20
+févr. 07, 2025 10:20:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+févr. 07, 2025 10:20:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+févr. 07, 2025 10:20:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+févr. 07, 2025 10:20:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+févr. 07, 2025 10:21:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
