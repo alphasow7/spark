@@ -1,0 +1,4 @@
+[debug] [spark-build] Classpath dependencies List()
+[debug] [spark-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'spark-build' to 'C:\Users\Alpha\Documents\GitHub\spark\project\.bloop\spark-build.json'
+[success] Generated .bloop\spark-build.json

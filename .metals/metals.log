@@ -1,0 +1,14 @@
+2025.02.07 22:16:41 INFO  Started: Metals version 1.5.1 in folders 'C:\Users\Alpha\Documents\GitHub\spark' for client Visual Studio Code 1.96.4.
+févr. 07, 2025 10:16:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+févr. 07, 2025 10:16:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.02.07 22:16:51 INFO  running 'C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Dsbt.version=1.10.7 -jar C:\Users\Alpha\AppData\Local\Temp\metals11113819750514826214\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2025.02.07 22:16:51 ERROR [info] [launcher] getting org.scala-sbt sbt 1.10.7  (this may take some time)...
+2025.02.07 22:16:56 ERROR [info] [launcher] getting Scala 2.12.20 (for sbt)...
+2025.02.07 22:16:59 INFO  [info] Updated file C:\Users\Alpha\Documents\GitHub\spark\project\build.properties: set sbt.version to 1.10.7
+2025.02.07 22:16:59 INFO  [info] welcome to sbt 1.10.7 (Oracle Corporation Java 18.0.2.1)
+2025.02.07 22:17:03 INFO  [info] loading settings for project spark-build-build from metals.sbt...
+2025.02.07 22:17:04 INFO  [info] loading project definition from C:\Users\Alpha\Documents\GitHub\spark\project\project
+2025.02.07 22:17:07 INFO  [info] loading settings for project spark-build from metals.sbt...
+2025.02.07 22:17:07 INFO  [info] loading project definition from C:\Users\Alpha\Documents\GitHub\spark\project
